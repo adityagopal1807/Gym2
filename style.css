@@ -35,29 +35,22 @@ label.logo {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .logo-container {
     display: flex;
     align-items: center;
-    margin-right: 0; /* Ensure no margin to the right */
 }
 
-/* Logo image styling */
 .logo-img {
-    height: 120px; /* Adjust size as needed */
+    height: 90px;
     width: auto;
-    margin-right: 5px; /* Space between the image and text */
+    margin-right: 10px; /* Space between the image and text */
 }
 
-/* Logo text styling */
 .logo-text {
     color: white;
     font-size: 30px;
     font-weight: bold;
-}
-nav img {
-    height: 90px;
-    width: auto;
-    border-radius: 50%;
 }
 
 nav ul {
@@ -116,12 +109,13 @@ nav ul li a:hover {
     }
 
     nav ul li {
-        margin: 50px 0;
+        margin: 20px 0;
         line-height: 30px;
     }
 
     nav ul li a {
         font-size: 20px;
+        padding: 10px 20px;
     }
 
     #check:checked ~ ul {
@@ -129,15 +123,18 @@ nav ul li a:hover {
     }
 
     /* Center logo on smaller screens */
+    .logo-container {
+        justify-content: center;
+    }
+
     label.logo {
         font-size: 30px;
         text-align: center;
+        margin: 0;
     }
 
-    nav img {
-        margin: 0 auto;
+    .logo-img {
         height: 80px;
-        border-radius: 50%;
     }
 }
 
@@ -168,22 +165,6 @@ nav ul li a:hover {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
-/* Smaller screen adjustments */
-@media (max-width: 400px) {
-    nav ul li a {
-        font-size: 16px;
-        padding: 5px 10px;
-    }
-
-    .custom-btn {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-    label.logo {
-        font-size: 30px;
-    }
-}
 /* General Styles for Hero Section */
 .hero {
     position: relative;
@@ -195,9 +176,9 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     color: #fff;
-  }
-  
-  .bg-overlay {
+}
+
+.bg-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -205,77 +186,77 @@ nav ul li a:hover {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Add overlay to the background image */
     z-index: 1;
-  }
-  
-  /* Container and Text Styling */
-  .hero .container {
+}
+
+/* Container and Text Styling */
+.hero .container {
     position: relative;
     z-index: 2; /* Ensures the content appears above the overlay */
-  }
-  
-  .hero h6 {
+}
+
+.hero h6 {
     font-size: 18px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: white; /* Accent color for subheading */
     margin-bottom: 20px;
-  }
-  
-  .hero h1 {
+}
+
+.hero h1 {
     font-size: 48px;
     font-weight: bold;
     color: #fff;
     margin-bottom: 30px;
-  }
-  
-  .hero p {
+}
+
+.hero p {
     font-size: 20px;
     margin-top: 20px;
     color: rgba(255, 255, 255, 0.8);
-  }
-  
-  /* Button Styles */
-  .hero .btn {
+}
+
+/* Button Styles */
+.hero .btn {
     padding: 12px 30px;
     border-radius: 50px;
     font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-transform: uppercase;
-  }
-  
-  .hero .btn.custom-btn {
+}
+
+.hero .btn.custom-btn {
     background-color: black; /* Button background color */
     color: white;
-  }
-  
-  .hero .btn.custom-btn:hover {
+}
+
+.hero .btn.custom-btn:hover {
     background-color: #ff6347;
     color: #fff;
-  }
-  
-  .hero .btn.bordered {
+}
+
+.hero .btn.bordered {
     background-color: transparent;
     border: 2px solid #ff6347;
     color: #ff6347;
-  }
-  
-  /*.hero .btn.bordered:hover {
+}
+
+.hero .btn.bordered:hover {
     background-color: #fff;
     color: #333;
-  }*/
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
     .hero h1 {
-      font-size: 36px;
+        font-size: 36px;
     }
-  
+
     .hero h6 {
-      font-size: 16px;
+        font-size: 16px;
     }
-  
+
     .hero .btn {
-      padding: 10px 25px;
-      font-size: 14px;
+        padding: 10px 25px;
+        font-size: 14px;
     }
-  }
+}
