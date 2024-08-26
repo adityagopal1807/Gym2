@@ -35,7 +35,25 @@ label.logo {
     font-weight: bold;
     text-transform: uppercase;
 }
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 0; /* Ensure no margin to the right */
+}
 
+/* Logo image styling */
+.logo-img {
+    height: 120px; /* Adjust size as needed */
+    width: auto;
+    margin-right: 5px; /* Space between the image and text */
+}
+
+/* Logo text styling */
+.logo-text {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
 nav img {
     height: 90px;
     width: auto;
