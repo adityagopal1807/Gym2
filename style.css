@@ -170,7 +170,7 @@ nav ul li a:hover {
 .hero {
     position: relative;
     height: 100vh;
-    background: url('your-background-image.jpg') no-repeat center center/cover;
+    background: url('https://i.ibb.co/nDcbLGf/background.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
